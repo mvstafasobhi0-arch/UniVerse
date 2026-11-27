@@ -1,0 +1,19 @@
+/* UniVerse v10 — global chrome additions */
+.srch-go{border:none;background:var(--crim);color:#fff;font-family:inherit;font-weight:800;font-size:15px;padding:10px 26px;border-radius:12px;cursor:pointer;transition:.25s}
+.srch-go:hover{background:#6d1230}
+.u-a11y{display:flex;gap:4px;align-items:center;margin-inline-end:8px}
+.u-a11y button{background:transparent;border:1px solid #ffffff2e;color:#e8dfe2;font-family:'SG',Arial;font-weight:700;font-size:11px;width:26px;height:22px;border-radius:6px;cursor:pointer;transition:.2s;line-height:1;padding:0}
+.u-a11y button:hover{border-color:var(--crim);color:#fff;background:var(--crim)}
+.ck{position:fixed;bottom:0;inset-inline:0;z-index:300;background:#fff;border-top:1px solid var(--line2,#e8dfe2);box-shadow:0 -12px 40px -18px rgba(20,6,14,.25);display:flex;align-items:center;justify-content:center;gap:26px;padding:14px 22px;transform:translateY(110%);transition:transform .45s cubic-bezier(.2,.9,.3,1)}
+.ck.show{transform:none}
+.ck.hide{display:none}
+.ck p{margin:0;font-size:13.5px;color:var(--mut,#5c4a52)}
+.ck p a{color:var(--crim);font-weight:800}
+.ck button{background:var(--crim);color:#fff;border:none;font-family:inherit;font-weight:800;font-size:13.5px;padding:10px 26px;border-radius:10px;cursor:pointer}
+.apply-chip{position:fixed;bottom:26px;inset-inline-start:26px;z-index:95;background:linear-gradient(135deg,#6d1230,#8f1d40);color:#fff;font-weight:800;font-size:14.5px;padding:13px 24px;border-radius:999px;display:flex;align-items:center;gap:10px;box-shadow:0 14px 34px -12px rgba(143,29,64,.6);opacity:0;pointer-events:none;transform:translateY(14px);transition:.35s}
+.apply-chip.show{opacity:1;pointer-events:auto;transform:none}
+.apply-chip svg{width:15px;height:15px;stroke:#fff;stroke-width:2.4;fill:none}
+@media(max-width:720px){.ck{flex-direction:column;gap:10px;text-align:center}.apply-chip{font-size:13px;padding:11px 18px}}
+
+#srch .fld input{min-width:0}
+.srch-go{flex:none}
